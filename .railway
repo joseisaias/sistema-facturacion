@@ -1,3 +1,0 @@
-[build]
-# Especifica la versión de PHP que quieres usar
-builder = "php:8.1-fpm"
