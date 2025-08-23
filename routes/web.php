@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ClienteController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// La página principal muestra el dashboard
 Route::get('/', function () {
     return view('dashboard');
+});
+
+// Ruta para la página de clientes
+Route::get('/clientes', function () {
+    return view('clientes');
 });
